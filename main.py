@@ -41,9 +41,9 @@ class menu:
                 list.append(row)
             if len(list) > 0:
                 for row in booked:
-                    print('#Name    #Date   #Time 1')
+                    print('№\t   #Name    #Room   #Date\t    #Gmail\t    #Phone')
                     print(row)
-                print("Room is Booked, Please choose another room!")
+                print("\nRoom is Booked, Please choose another room!")
             else:
                 cursor.execute("INSERT INTO example values (?,?,?,?,?)", (name, room_num, date, gmail, phone))
                 conn.commit()
